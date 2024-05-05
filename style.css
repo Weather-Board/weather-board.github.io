@@ -1,15 +1,27 @@
+:root {
+  --bg-color: #0b0316;
+  --nav-bg-color: rgba(11, 3, 22, 0.7);
+  --text-color: white;
+  --hover-color: #25194c;
+  --second-hover-color: #392879;
+  --third-hover-color: #1b133a;
+  --header-color: #793dcd;
+  --color: rgb(85, 54, 177);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 body {
   width: 100%;
   height: 100vh;
-  background-color: #0b0316;
+  background-color: var(--bg-color);
 }
 
 .nav {
@@ -20,7 +32,7 @@ body {
   padding-inline: 30px;
   position: fixed;
   top: 0;
-  background-color: rgba(11, 3, 22, 0.7);
+  background-color: var(--nav-bg-color);
   backdrop-filter: blur(5px);
 }
 
@@ -34,7 +46,7 @@ body {
 }
 
 .nav-link {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
   padding-inline: 15px;
@@ -46,7 +58,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--hover-color);
 }
 
 .wrap {
@@ -80,11 +92,11 @@ body {
 }
 
 .settings:hover {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--hover-color);
 }
 
 .weatherform h1 {
-  color: #793dcd;
+  color: var(--header-color);
   width: 90vw;
   margin-bottom: 40px;
   text-align: center;
@@ -103,11 +115,11 @@ body {
 .city-input {
   padding-block: 15px;
   padding-right: 15px;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px;
   border: none;
   outline: none;
-  background-color: #0a0314;
-  color: white;
+  background-color: transparent;
+  color: var(--text-color);
   font-size: 20px;
   width: calc(100% - 50px);
 }
@@ -119,7 +131,7 @@ body {
   border-radius: 10px;
   padding: 10px;
   padding-inline: 30px;
-  background-color: #0a0314;
+  background-color: var(--bg-color);
   transition: box-shadow 0.5s ease;
 }
 
@@ -135,28 +147,28 @@ body {
   text-align: center;
   border-radius: 10px;
   border: none;
-  background-color: #25194c;
-  color: white;
+  background-color: var(--hover-color);
+  color: var(--text-color);
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .weatherform button:hover {
-  background-color: #392879;
+  background-color: var(--second-hover-color);
 }
 .weatherform button:active {
-  background-color: #1b133a;
+  background-color: var(--third-hover-color);
 }
 
 .card {
   width: 250px;
   height: 250px;
-  background-color: #0b0316;
+  background-color: var(--bg-color);
   box-shadow: 0px 0px 15px #2d0f56;
   border-radius: 10px;
   padding: 20px;
-  color: white;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
