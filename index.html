@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | WeatherBoard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/" class="logo">
+        <img src="media/dark_nav.png" alt="WeatherBoard" />
+      </a>
+      <a href="pinned.html" class="nav-link">Pinned</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="btns">
+        <button class="settings">
+          <img src="media/mode.svg" />
+        </button>
+        <button class="settings">
+          <img src="media/settings.svg" alt="Settings" />
+        </button>
+      </div>
+    </nav>
+    <div class="wrap">
+      <form class="weatherform">
+        <h1>Know Everything With WeatherBoard</h1>
+        <div class="bar">
+          <input type="text" class="city-input" placeholder="Enter City" />
+          <button type="submit">Go</button>
+        </div>
+      </form>
+      <div class="card">
+        <h1 class="city-name">New York City</h1>
+        <p class="temp-display">90 &deg;C</p>
+        <p class="humidity-display">Humidity: 75%</p>
+        <p class="desc-display">Clear Skies</p>
+        <p class="emoji">☀️</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="disclaim">&copy; 2024 WeatherBoard. All Rights Reserved.</p>
+      <div class="foot-links">
+        <a href="" class="foot-link" target="_blank">
+          <img src="media/github.svg" alt="GitHub" />
+        </a>
+        <a
+          href="mailto:tonyforself@gmail.com"
+          class="foot-link"
+          target="_blank"
+        >
+          <img src="media/email.svg" alt="Email" />
+        </a>
+        <a
+          href="https://forms.gle/Lhza3aoL5Qyaotux9"
+          class="foot-link"
+          target="_blank"
+        >
+          <img src="media/feedback.svg" alt="Feedback" />
+        </a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
